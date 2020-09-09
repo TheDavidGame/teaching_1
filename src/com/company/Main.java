@@ -7,9 +7,27 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Угадай число");
-        int range = 10;
-        int number = (int) (Math.random() * range);//отрезаем дробную часть (int) в районе 10(range)
-        lvl_one(range,number);
+
+        int lvl;
+        System.out.println("Введите уровень");
+        lvl = scan.nextInt();
+        switch (lvl){
+            case 1:
+                int range = 10;
+                int number = (int) (Math.random() * range);//отрезаем дробную часть (int) в районе 10(range)
+                lvl_one(range,number);
+                break;
+            case 2:
+                 range = 20;
+                 number = (int) (Math.random() * range);//отрезаем дробную часть (int) в районе 10(range)
+                lvl_one(range,number);
+                break;
+            case 3:
+                range = 30;
+                number = (int) (Math.random() * range);//отрезаем дробную часть (int) в районе 10(range)
+                lvl_one(range,number);
+                break;
+        }
 
 
     }
